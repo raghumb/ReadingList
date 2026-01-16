@@ -5,3 +5,4 @@
 
 [Production Ready AI Systems](https://medium.com/data-science-collective/how-to-build-production-ready-ai-engineering-projects-3142a88f06ea)
 
+[AI Assisted Coding Tricks](https://medium.com/data-science-collective/youre-using-ai-to-write-code-you-re-not-using-it-to-review-code-728e5ec2576e)
