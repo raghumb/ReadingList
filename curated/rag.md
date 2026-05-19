@@ -21,6 +21,17 @@ Decouple documents, which we want to use for answer synthesis, from a reference,
 
 For example, Unstructured will partition PDF files by first removing all embedded image blocks. Then it will use a layout model (YOLOX) to get bounding boxes (for tables) as well as titles, which are candidate sub-sections of the document (e.g., Introduction, etc). It will then perform post processing to aggregate text that falls under each title and perform further chunking into text blocks for downstream processing based on user-specific flags (e.g., min chunk size, etc).
 
+# Query Rewriting
+In Rag flow, Query Rewriting happens before sending query to embedding DB. 
+(Query Rewriting)[https://medium.com/@florian_algo/advanced-rag-06-exploring-query-rewriting-23997297f2d1]
+## Techniques involve:
+- Hypothetical Document Embeddings (HyDE) 
+- Rewrite-Retrieve-Read
+- Step-back prompting:
+- Query2Doc
+- ITER-RETGEN
+
+
 # HyDE RAG (Hypothetical Document Embeddings) 
 (HYDE Rag)[https://medium.com/aingineer/a-complete-guide-to-implementing-hyde-rag-82492551f3d8]
 
