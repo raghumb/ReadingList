@@ -40,3 +40,8 @@ MCP consists of two layers:
 
 - Notifications (real-time notifications to enable dynamic updates between servers and clients. For example, when a server’s available tools change)
 
+# Streamable HTTP
+Streamable HTTP is not a replacement for HTTP. It is a way of using HTTP to communicate with an MCP server, with support for streaming responses when needed.
+The key distinction is that HTTP is the transport protocol, while Streamable HTTP is an MCP-defined transport that specifies how MCP messages travel over HTTP.
+
+Here, Message format is JSON RPC. Supports streaming using HTTP responses, including SSE

@@ -36,3 +36,16 @@ In Rag flow, Query Rewriting happens before sending query to embedding DB.
 (HYDE Rag)[https://medium.com/aingineer/a-complete-guide-to-implementing-hyde-rag-82492551f3d8]
 
 Before querying the actual corpus, the system generates a hypothetical document — a guess at what a good answer might look like — and uses that hypothesized text’s embedding as a query vector.
+
+
+![Rag Complete Flow](../images/rag.png)
+
+# Caching in RAG
+cache different stages responses:
+- embedding results
+- query rewrite results
+- 
+
+Mean Reciprocal Rank:
+Reciprocal Rank = 1/Rank of relevant record
+If rank of relevant record is 3, then RR = 1/3
